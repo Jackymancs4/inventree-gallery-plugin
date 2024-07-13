@@ -9,7 +9,6 @@ from part.models import Part, PartAttachment
 
 
 class GalleryPlugin(PanelMixin, InvenTreePlugin):
-    """An EXTREMELY simple action plugin which demonstrates the capability of the ActionMixin class."""
 
     NAME = "AttachmentGalleryPlugin"
     SLUG = "attachment_gallery"

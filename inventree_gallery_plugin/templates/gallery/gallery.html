@@ -2,9 +2,15 @@
 <link href=" https://cdn.jsdelivr.net/npm/simplelightbox@2.14.3/dist/simple-lightbox.min.css " rel="stylesheet">
 
 <div class="gallery">
+
     {% for attachment in plugin.attachments %}
+
+    <a href="/media/{{ attachment.attachment }}">
         <img style="width: 25%" src="{{ attachment.fully_qualified_url }}" alt="{{ attachment.comment }}" title="{{ attachment.basename }}"/>
+    </a>
+
     {% endfor %}
+
 </div>
 
 <script>
