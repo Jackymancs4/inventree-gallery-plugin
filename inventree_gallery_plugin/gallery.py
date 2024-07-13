@@ -13,7 +13,9 @@ class GalleryPlugin(PanelMixin, InvenTreePlugin):
 
     NAME = "AttachmentGalleryPlugin"
     SLUG = "attachment_gallery"
-    TITLE = "AttachmentGallery"
+    TITLE = "Attachment Gallery"
+    AUTHOR = "Jackymancs4"
+    LICENSE = "MIT"
 
     def is_image(self, attachment):
         return True

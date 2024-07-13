@@ -1,7 +1,7 @@
 [project]
 name = "inventree-gallery-plugin"
-version = "0.2"
-description = "gallery.it integration for InvenTree"
+version = "0.2.1"
+description = "An InvenTree gallery for your photo attachments"
 readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [
@@ -19,6 +19,10 @@ Homepage = "https://github.com/Jackymancs4/inventree-gallery-plugin"
 
 [project.entry-points."inventree_plugins"]
 inventree-gallery-plugin = "inventree_gallery_plugin:gallery.GalleryPlugin"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [tool.isort]
 line_length = 96
